@@ -1,7 +1,7 @@
 ---
 title: "Assignment 1: R Markdown practice"
-author: "FirstName LastName"
-date: "`r Sys.Date()`"
+author: "Donghyun Yoon"
+date: "`r Sys.Date(2024.08.27)`"
 documentclass: article
 geometry: margin=1in
 fontsize: 11pt
@@ -25,8 +25,10 @@ output:
 urlcolor: blue
 ---
 
-<!-- Write your Markdown below this line -->
-
+changes
+```{r}
+g<-5
+```
 
 
 
