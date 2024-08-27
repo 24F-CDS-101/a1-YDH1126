@@ -1,10 +1,10 @@
 ---
 title: "Assignment 1: R Markdown practice"
+# Heading 1
+title: 'Assignment 1: R Markdown practice'
 author: "Donghyun Yoon"
 date: "`r Sys.Date(2024.08.27)`"
-documentclass: article
-geometry: margin=1in
-fontsize: 11pt
+date: "`r Sys.Date()`"
 output:
   pdf_document:
     toc: false
@@ -22,13 +22,24 @@ output:
     number_sections: true
     smart: true
     dev: svg
+  word_document:
+    toc: false
+geometry: margin=1in
+fontsize: 11pt
+documentclass: article
 urlcolor: blue
 ---
 
+*italics*
 changes
 ```{r}
 g<-5
+```{r, warning=false}
+x <- 2+2
+x + 3
 ```
-
-
+## [1] 7
+```
+ggplot2::qplot(data = iris, x = Sepal.Length, y = Sepal.Width)
+```
 
